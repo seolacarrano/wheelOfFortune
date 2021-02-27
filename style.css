@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap, Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+#title {
+    font-size: 70px;
+    text-align: center;
+    background-color: rgb(86, 197, 145);
+}
+
+#word-holder {
+    width: 500px;
+    height: 70px;
+    max-height: 100%;
+    max-width: 100%;
+    color: rgb(86, 197, 145);
+    background-color: rgb(31, 34, 34);
+    margin: 0 auto;
+}
+
+#start-btn {
+    border-radius: 70%;
+    font-size: 24px;
+    border: none;
+    padding: 1rem 1rem;
+    width: 5 rem;
+    height: 3 rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 45%;
+    background-color: rgb(86, 197, 145);
+    color: white;
+}
+
+#input-form {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#user-guess {
+    width: 50%;
+    padding: 12px 20px;
+    font-size: large;
+    text-align: center;
+}
+
+#submit-btn {
+    border-radius: 70%;
+    font-size: 17px;
+    border: none;
+    padding: 1rem 1rem;
+    margin-top: 0.5rem;
+    background-color: black;
+    color: white;
+}
+
+#feedback{
+
+    text-align: center;
+
+}
