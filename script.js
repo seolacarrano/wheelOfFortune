@@ -30,8 +30,7 @@ function guessedWord() {
     wordHolder.innerText = wordToGuess;
     wordHolder.style.textAlign = "center";
     wordHolder.style.fontSize = "50px"
-    alert(word)
-    //wordHolder.innerText = word;
+    //alert(word)
 }
 startBtn.addEventListener("click", guessedWord)
 
@@ -40,10 +39,11 @@ startBtn.addEventListener("click", guessedWord)
 function handlingGuess(e) {
     const vowel = userGuess.value.match(/[aeiou]/g)
     const consonant = userGuess.value.match(/[bcdfghjklmnpqrstvwxz]/g)
+    console.log(consonant.length)
     let include = userGuess.value.split('').filter(userVal => word.includes(userVal))
 
     //if input includes one vowel and three consonants, check the validity
-    if (vowel.length <= 1 || consonant.length <= 3) {
+    if (vowel.length === 1 && consonant.length === 3) {
         let feedback = document.createElement('h3')
         if (include.length !== 0) {
             feedback.innerText = `This word includes ${include}`
@@ -68,7 +68,7 @@ function handlingGuess(e) {
 
     } else {
         // if input does not include one vowel and three consonants, alert 
-        alert('Please enter less than 4 consonants and less than 2 vowels')
+        alert('Please enter less than 1 vowel and 3 consonants')
     }
 
     e.preventDefault();
